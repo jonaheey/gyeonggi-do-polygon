@@ -97,14 +97,13 @@ function makeArea(feature) {
 
 // 경기도
 function makePolygon(type, feature_NM) {
-  let feature;
   reset();
 
-  // if (feature_NM === gyeonggi.DO_NM) {
   if (type === "DO") {
-    for (const ssg of sgg_features) {
-      makeArea(ssg);
-    }
+    // for (const ssg of sgg_features) {
+    //   makeArea(ssg);
+    // }
+    makeArea(ggd_feature);
     moveCenter(ggd_feature.center, 10);
   } else if (type === "SGG") {
     const find_sgg_feature = sgg_features.find(
@@ -141,20 +140,20 @@ function displayEMDList() {
   const li_emd_eles = document.getElementsByClassName("li-emd");
   for (let i = 0; i < emd_features.length; i++) {
     const emd_nm = emd_features[i].name;
-    const li_emd_ele = li_emd_eles[i];
+    const li_emd = li_emd_eles[i];
 
     let a_ele = document.createElement("a");
     a_ele.innerHTML = emd_nm;
     a_ele.setAttribute("href", `javascript:makePolygon('EMD', '${emd_nm}')`);
 
-    li_emd_ele.appendChild(a_ele);
+    li_emd.appendChild(a_ele);
   }
 }
 
 function resetEMDList() {
-  const li_eles = document.getElementsByClassName("li-emd");
-  for (const li_ele of li_eles) {
-    const a_ele = li_ele.getElementsByTagName("a")[0];
+  const li_emd_eles = document.getElementsByClassName("li-emd");
+  for (const li_emd of li_emd_eles) {
+    const a_ele = li_emd.getElementsByTagName("a")[0];
     if (a_ele != undefined) {
       a_ele.remove();
     } else {
@@ -171,3 +170,33 @@ function reset() {
   }
   polygons = [];
 }
+
+// 이벤트
+const ul_sgg = document.getElementById("ul-sgg");
+const ul_emd = document.getElementById("ul-emd");
+
+function mouseover(e) {
+  if (e.target.tagName === 'A') {
+    e.target.style.color = "#c000ff";
+  }
+}
+
+function mouseout(e) {
+  if (e.target.tagName === 'A') {
+    e.target.style.color = "#888";
+  }
+}
+
+function click(e) {
+  if (e.target.tagName === 'A') {
+    e.target.style.color = "#c000ff";
+  }
+}
+
+ul_sgg.addEventListener("mouseover", mouseover);
+ul_sgg.addEventListener("mouseout", mouseout);
+ul_sgg.addEventListener("click", click);
+
+ul_emd.addEventListener("mouseover", mouseover);
+ul_emd.addEventListener("mouseout", mouseout);
+ul_emd.addEventListener("click", click);

@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+#map {
+  width: 1053px;
+  height: 768px;
+  margin-left: 15px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 440px;
+}
+
+li {
+  /* width: calc(100% / 4); */
+  width: 105px;
+  height: 20px;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+#container {
+  display: flex;
+}
+
+#minimap {
+  border-top: 1px solid red;
+}
+
+/* .sgg {
+    width: 500px;
+    height: 242px;
+} */
+
+.do {
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+  border-top: 3px solid #eee;
+  border-bottom: 3px solid #eee;
+}
+
+.gu {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  border-top: 2px solid #eee;
+  border-bottom: 3px solid #eee;
+}
+
+.sgg li>a {
+  color: #888;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.emd li>a {
+  color: #888;
+  font-size: 13px;
+  padding-left: 5px;
+}

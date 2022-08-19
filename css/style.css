@@ -2,12 +2,6 @@
   box-sizing: border-box;
 }
 
-#map {
-  width: 1053px;
-  height: 768px;
-  margin-left: 15px;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -29,12 +23,22 @@ a {
   font-weight: 700;
 }
 
+#map {
+  width: 1053px;
+  height: 768px;
+  margin-left: 15px;
+}
+
 #container {
   display: flex;
 }
 
 #minimap {
-  border-top: 1px solid red;
+  height: 342px;
+  border: 3px solid #eee;
+  background-image: url('../svg/LARD_ADM_SECT_SGG_41.svg');
+  background-repeat : no-repeat;
+  background-size : 280px;
 }
 
 /* .sgg {
@@ -46,7 +50,6 @@ a {
   color: #000;
   font-size: 22px;
   font-weight: 700;
-  border-top: 3px solid #eee;
   border-bottom: 3px solid #eee;
 }
 

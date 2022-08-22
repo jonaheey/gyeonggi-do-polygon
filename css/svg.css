@@ -1,0 +1,194 @@
+.OUTLINE {
+  stroke-linejoin: round;
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+
+#CD41111 {
+  fill: #f1c40f;
+}
+
+#CD41113 {
+  fill: #16a085;
+}
+
+#CD41115 {
+  fill: #f39c12;
+}
+
+#CD41117 {
+  fill: #2ecc71;
+}
+
+#CD41131 {
+  fill: #e67e22;
+}
+
+#CD41133 {
+  fill: #27ae60;
+}
+
+#CD41135 {
+  fill: #d35400;
+}
+
+#CD41150 {
+  fill: #3498db;
+}
+
+#CD41171 {
+  fill: #e74c3c;
+}
+
+#CD41173 {
+  fill: #2980b9;
+}
+
+#CD41190 {
+  fill: #c0392b;
+}
+
+#CD41210 {
+  fill: #9b59b6;
+}
+
+#CD41220 {
+  fill: #8e44ad;
+}
+
+#CD41250 {
+  fill: #34495e;
+}
+
+#CD41271 {
+  fill: #2c3e50;
+}
+
+#CD41273 {
+  fill: #1abc9c;
+}
+
+#CD41281 {
+  fill: #f1c40f;
+}
+
+#CD41285 {
+  fill: #16a085;
+}
+
+#CD41287 {
+  fill: #f39c12;
+}
+
+#CD41290 {
+  fill: #2ecc71;
+}
+
+#CD41310 {
+  fill: #e67e22;
+}
+
+#CD41360 {
+  fill: #27ae60;
+}
+
+#CD41370 {
+  fill: #d35400;
+}
+
+#CD41390 {
+  fill: #3498db;
+}
+
+#CD41410 {
+  fill: #e74c3c;
+}
+
+#CD41430 {
+  fill: #2980b9;
+}
+
+#CD41450 {
+  fill: #c0392b;
+}
+
+#CD41461 {
+  fill: #9b59b6;
+}
+
+#CD41463 {
+  fill: #8e44ad;
+}
+
+#CD41465 {
+  fill: #34495e;
+}
+
+#CD41480 {
+  fill: #2c3e50;
+}
+
+#CD41500 {
+  fill: #1abc9c;
+}
+
+#CD41550 {
+  fill: #f1c40f;
+}
+
+#CD41570 {
+  fill: #16a085;
+}
+
+#CD41590 {
+  fill: #f39c12;
+}
+
+#CD41610 {
+  fill: #2ecc71;
+}
+
+#CD41630 {
+  fill: #e67e22;
+}
+
+#CD41650 {
+  fill: #27ae60;
+}
+
+#CD41670 {
+  fill: #d35400;
+}
+
+#CD41800 {
+  fill: #3498db;
+}
+
+#CD41820 {
+  fill: #e74c3c;
+}
+
+#CD41830 {
+  fill: #2980b9;
+}
+
+.LINE {
+  stroke-linejoin: round;
+  stroke: #ffffff;
+  stroke-width: 1;
+  fill: none;
+}
+
+.POINT {
+  stroke: #ffffff;
+  stroke-width: 1;
+  fill: #ffffff;
+}
+
+.TEXT {
+  fill: #ffffff;
+  /* font-size: 13px; */
+  font-size: 10px;
+  text-anchor: middle;
+  alignment-baseline: middle;
+}
